@@ -5,10 +5,10 @@ const modalBackdrop = document.querySelector(".modal-backdrop");
 
 //!-- Open Func --//
 openButton.addEventListener("click", () => {
-  modalBackdrop.classList.add("show-modal");
+  modalBackdrop.classList.toggle("show-modal");
 });
 
 //!-- Close Func --//
 closeButton.addEventListener("click", () => {
-  modalBackdrop.classList.remove("show-modal");
+  modalBackdrop.classList.toggle("show-modal");
 });
