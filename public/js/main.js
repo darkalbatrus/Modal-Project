@@ -17,3 +17,13 @@ openButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   toggleModal();
 });
+
+//!-- Close On Click --//
+modalBackdrop.addEventListener("click", (e) => {
+  const currentElement = e.target;
+  console.log(currentElement);
+
+  if (currentElement.classList.contains("show-modal")) {
+    toggleModal();
+  }
+});
